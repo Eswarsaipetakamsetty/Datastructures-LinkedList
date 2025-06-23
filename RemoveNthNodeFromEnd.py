@@ -24,8 +24,6 @@ def RemoveNthNodeFromEnd(head:Node, n):
     fast = head
     slow = head
     for i in range(n):
-        if fast.next == None:
-            return head
         fast = fast.next
     if fast == None:
         return head.next
